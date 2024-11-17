@@ -33,7 +33,7 @@ data_rows = [('Pets.com', 'San Francisco, California', '(505) 302-1234', 'pet.co
 # conn.commit()
 
 # Retrieve data
-cursor.execute('SELECT * FROM yellow_pages WHERE business_name like \'S%\'')
+cursor.execute('SELECT * FROM yellow_pages WHERE id > 1')
 for row in cursor.fetchall():
     print(row)
 
